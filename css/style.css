@@ -2,6 +2,9 @@
 body{
     font-family: "Poppins",sans-serif;
 }
+*{
+  box-sizing: border-box;
+}
 /*Mise en forme de l'en tete de la page*/
 header{
     padding: 60px;
@@ -119,13 +122,16 @@ footer {
 /*Mise en forme de chaque article*/
 /* Style de la carte (Article) */
 .blog-post {
-    margin-top: 20px;
+    margin-left: 20%;
+    margin-top: 25px;
+    width: 50%;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    
 }
 
 /* Image de couverture */
@@ -172,8 +178,10 @@ footer {
 form {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 40px;
   font-family: "Poppins",sans-serif;
+  width: 20%; /* Set a specific width */
+  margin: 0 auto; /* Sets left/right margins to auto for centering */
 }
 
 /*Mise en forme du champ input text*/
@@ -226,7 +234,59 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
 }
+/*Ecran de 320px 768px 1024px */
 
+@media (min-width: 320px) {
+   header{
+      padding: 40px 20px;
+    }
+    .blog-post {
+    height: 5%;
+    width: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  form{
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .contact{
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+    header{
+      padding: 40px 20px;
+    }
+    .blog-post {
+    height: 5%;
+    width: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  form{
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .contact{
+    text-align: center;
+  }
+  
+}
 
+@media (min-width: 1024px) {
+ 
+  form{
+    height: auto;
+    width: 50%;
+    margin-bottom: 25px;
+  }
+  .contact{
+    text-align: center;
+  }
+
+}
 
 
